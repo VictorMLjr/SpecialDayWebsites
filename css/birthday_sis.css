@@ -1,0 +1,115 @@
+body {
+    background-color: #3daede;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: rgba(58, 255, 222, 0.749);
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+#birthday-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ed67ff;
+    font-family: 'Brush Script MT', cursive, 'Lucida Handwriting';
+}
+
+.birthday_message {
+
+    font-size: 24px;
+    color: #fff;
+    background-color: rgba(58, 255, 222, 0.749);
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.sis_Photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    width: fit-content;
+    margin: 0 auto;
+    padding: 25px;
+
+    background-color: white;
+    border-radius: 20px;
+
+    border: 8px solid #02ffab;
+
+    box-shadow:
+        0 0 0 12px rgba(2, 255, 171, 0.15),
+        0 0 0 20px rgba(2, 255, 171, 0.08);
+
+    position: relative;
+}
+
+.sis_Photo::before {
+    content: "✿ ✿ ✿ ✿";
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #02ffab;
+    font-size: 24px;
+}
+
+.sis_Photo::after {
+    content: "✿ ✿ ✿ ✿";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #02ffab;
+    font-size: 24px;
+}
+.sis_Photo img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+#confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.confetti {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    opacity: 0.9;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-20px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(110vh) rotate(720deg);
+    }
+}

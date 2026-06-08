@@ -1,5 +1,5 @@
 body {
-    background-color: #3daede;
+    background-color: #095310;
     font-family: 'Arial', sans-serif;
     color: #333;
     margin: 0;
@@ -10,7 +10,7 @@ p {
     font-size: 18px;
     margin-bottom: 20px;
     color: #fff;
-    background-color: rgba(58, 255, 222, 0.749);
+    background-color: #be944c;
     padding: 10px;
 }
 
@@ -24,7 +24,7 @@ header {
     text-align: center;
     font-size: 36px;
     margin-bottom: 20px;
-    color: #ed67ff;
+    color: #005661;
     font-family: 'Brush Script MT', cursive, 'Lucida Handwriting';
 }
 
@@ -32,15 +32,15 @@ header {
 
     font-size: 24px;
     color: #fff;
-    background-color: rgba(58, 255, 222, 0.749);
+    background-color: #be944c;
     width: 60%;
     margin: 0 auto;
     margin-top: 30px;
 }
 
-.sis_Photo {
+.baby_Photo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 15px;
 
@@ -51,39 +51,40 @@ header {
     background-color: white;
     border-radius: 20px;
 
-    border: 8px solid #02ffab;
+    border: 8px solid #025fff;
 
     box-shadow:
-        0 0 0 12px rgba(2, 255, 171, 0.15),
-        0 0 0 20px rgba(2, 255, 171, 0.08);
+        0 0 0 12px rgba(2, 85, 255, 0.15),
+        0 0 0 20px rgba(2, 85, 255, 0.08);
 
     position: relative;
 }
 
-.sis_Photo::before {
-    content: "✿ ✿ ✿ ✿";
+.baby_Photo::before {
+    content: "Certified";
     position: absolute;
-    top: -25px;
+    top: -35px;
     left: 50%;
     transform: translateX(-50%);
-    color: #02ffab;
+    color: #8d9ab1;
     font-size: 24px;
 }
 
-.sis_Photo::after {
-    content: "✿ ✿ ✿ ✿";
+.baby_Photo::after {
+    content: "Evil Baby";
     position: absolute;
-    bottom: -25px;
+    bottom: -35px;
     left: 50%;
     transform: translateX(-50%);
-    color: #02ffab;
+    color: #8d9ab1;
     font-size: 24px;
 }
-.sis_Photo img {
+.baby_Photo img {
     max-width: 100%;
     height: 250px;
     border-radius: 10px;
 }
+
 #confetti-container {
     position: fixed;
     top: 0;
